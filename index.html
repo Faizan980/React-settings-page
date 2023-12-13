@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>React settings page</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-items">
+            <img src="react-icon.png" alt="react logo" />
+            <i class="fa-brands fa-windows"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-car"></i>
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-square-poll-vertical"></i>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="nav">
+            <span class="welcome-msg">Welcome Colo!</span>
+            <div class="input-el">
+                <div class="input-icons">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input 
+                        class="input-field" 
+                        type="text"
+                        placeholder="Search">
+                </div>
+                <div class="user-icons">
+                    <span class="count-icon">
+                        <i class="fa-solid fa-envelope count-clr"></i>
+                        <span class="count">4</span>
+                    </span>
+                    <span class="count-icon">
+                        <i class="fa-solid fa-bell count-clr"></i>
+                        <span class="count">17</span>
+                    </span>
+                    <i class="fa-solid fa-circle-user count-clr"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-settings">
+        <input type="text" placeholder="Search Settings">
+        <div class="search-items" selected>
+            <div tabindex="1" id="cp-set" class="company-settings">
+                <span>Company Settings</span>
+            </div>
+            <div tabindex="2" id="bs-address" class="bussiness-address">
+                <span>Bussiness Address</span>
+            </div>
+            <div tabindex="3" id="Route-Ass" class="routes-assignment">
+                <span>Routes Assignment</span>
+            </div>
+            <div tabindex="4" id="role-perform" class="roles-performanace">
+                <span>Roles & Performanace</span>
+            </div>
+            <div tabindex="5" id="profit-setting" class="profile-settings">
+                <span>Profile Settings</span>
+            </div>
+            <div tabindex="6" id="storage-settings" class="storage-settings">
+                <span>Storage Settings</span>
+            </div>
+        </div>
+    </div>
+    <div 
+        id="company-details" >
+    </div>
+    <script src="index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/f1667b8fd8.js" crossorigin="anonymous"></script>
+</body>
+</html>
